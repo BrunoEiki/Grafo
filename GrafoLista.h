@@ -1,7 +1,9 @@
 #ifndef GRAFOLISTA_H
 #define GRAFOLISTA_H
+
 #include <iostream>
 #include <vector>
+#include <queue>
 
 using std::string;
 using std::vector;
@@ -52,10 +54,3 @@ private:
 };
 
 #endif
-
-/**
- * Grafo usando lista duplamente encadeada
- * Vai ter um no que vai apontar para dois nos e tera um valor proprio, que será o índice, e talvez mais 1 para ser o valor da aresta
- * NO construtor do grafo
- *
- */

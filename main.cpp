@@ -38,9 +38,9 @@ int main(int argc, char **argv)
 
     // grafoLista.adjacencias(1);
 
-    // grafoMatriz.componentesConectados();
-    // grafoMatriz.floydWarshall();
-    // grafoMatriz.bellmanFord(0);
+    grafoMatriz.componentesConectados();
+    grafoMatriz.floydWarshall();
+    grafoMatriz.bellmanFord(0);
     grafoMatriz.dijkstra(0);
 
     // grafoMatriz.printShortestPath();

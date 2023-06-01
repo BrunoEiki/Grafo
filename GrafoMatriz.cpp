@@ -176,6 +176,8 @@ void GrafoMatriz::dijkstra(int origem)
     std::vector<int> dist(num_vertice, INFINITO);
     dist[origem] = 0;
 
+    cout << "\n**** DIJKSTRA ****\n";
+
     std::priority_queue<VerticeMatriz, std::vector<VerticeMatriz>, std::greater<VerticeMatriz>> filaPrioridade;
     filaPrioridade.push(VerticeMatriz(origem, 0));
 
@@ -203,7 +205,7 @@ void GrafoMatriz::dijkstra(int origem)
         std::cout << "Vertice: " << i << ", Caminho Mínimo: ";
         if (dist[i] == INFINITO)
         {
-            std::cout << "INFINITO";
+            std::cout << "IMPOSSIVEL CHEGAR";
         }
         else
         {
@@ -304,7 +306,7 @@ void GrafoMatriz::floydWarshall()
         {
             if (dist[i][j] == INFINITO)
             {
-                std::cout << std::setw(4) << "INFINITO ";
+                std::cout << std::setw(4) << "INF ";
             }
             else
             {
